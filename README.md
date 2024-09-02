@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Flight Booking Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend application for the flight booking system. Users can book flights and receive real-time updates on their flight status.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- User-friendly interface for booking flights.
+- Real-time updates on flight status.
+- Notifications for flight updates.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- Tailwind CSS
+- Redux for state management
+- Socket.IO for real-time updates
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+- Node.js (v12 or later)
+- npm or yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/Yugesh-0831/indigo-hackathon-frontend.git
+    cd indigo-hackathon-frontend
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
+    ```sh
+    npm start
+    # or
+    yarn start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Open your browser and navigate to `http://localhost:3000`.
 
-### `npm run eject`
+## Application Pages
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Login Page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Users can log in using their email and password.
+- Admins have separate credentials to access the admin panel.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img width="1440" alt="Screenshot 2024-07-30 at 5 24 32 PM" src="https://github.com/user-attachments/assets/d30ccf0d-82d4-45e9-8243-28f08b54211a">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Signup Page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- New users can create an account by providing their email, password, name, and phone number.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img width="1440" alt="Screenshot 2024-07-30 at 5 24 53 PM" src="https://github.com/user-attachments/assets/c4c3743e-6c1e-44dd-bb36-9d4b5440dcc6">
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Flights Page
 
-### Analyzing the Bundle Size
+- Users can see all the available flights and book them.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<img width="1440" alt="Screenshot 2024-07-30 at 4 49 32 PM" src="https://github.com/user-attachments/assets/62da1a1e-23dc-491c-a29e-7a1d63778dea">
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### My Flights Section
 
-### Advanced Configuration
+- Displays a list of flights booked by the user.
+- Shows detailed information about each flight, including departure and arrival times and gates.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img width="1440" alt="Screenshot 2024-07-30 at 4 49 58 PM" src="https://github.com/user-attachments/assets/c753f458-9362-433b-8998-42374ae9e43a">
 
-### Deployment
+- Provides real-time updates on the status of booked flights.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img width="1440" alt="Screenshot 2024-07-30 at 4 50 24 PM" src="https://github.com/user-attachments/assets/c535be0e-ebc6-4826-93f7-0864253ab87d">
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Admin Panel
+
+- Admins can view and manage flight details.
+  
+<img width="1440" alt="Screenshot 2024-07-30 at 4 49 32 PM" src="https://github.com/user-attachments/assets/977675b0-b220-4622-af77-df92e5db10f7">
+
+- Allows admins to update flight information such as status, gates, and times.
+- Sends notifications via email and SMS to users when flight details are updated.
+
+<img width="1440" alt="Screenshot 2024-07-30 at 4 48 44 PM" src="https://github.com/user-attachments/assets/e1448439-b99f-4180-99ec-af732c5f464f">
+
